@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom"
+import { NavLink, Outlet } from "react-router-dom"
 
 const FrontendLayout = ()=>{
     return(
@@ -9,16 +9,16 @@ const FrontendLayout = ()=>{
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/">首頁</a>
+                                    <NavLink className="nav-link" href="/">首頁</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/#/cart">購物車</a>
+                                    <NavLink className="nav-link" href="/#/cart">購物車</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/#/products">產品列表</a>
+                                    <NavLink className="nav-link" href="/#/products">產品列表</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/#/singleProduct">單一產品列表</a>
+                                    <NavLink className="nav-link" href="/#/singleProduct">單一產品列表</NavLink>
                                 </li>
                             </ul>
                         </div>
